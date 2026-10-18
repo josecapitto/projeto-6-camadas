@@ -1,0 +1,33 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "DTMF: menu principal",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/projeto.py",
+            "python": "${workspaceFolder}/venv/Scripts/python.exe",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "justMyCode": true
+        },
+        {
+            "name": "DTMF: emissor",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/emissor.py",
+            "python": "${workspaceFolder}/venv/Scripts/python.exe",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "DTMF: receptor",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/receptor.py",
+            "python": "${workspaceFolder}/venv/Scripts/python.exe",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

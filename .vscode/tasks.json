@@ -1,0 +1,20 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "DTMF: instalar dependências",
+            "type": "process",
+            "command": "${workspaceFolder}/venv/Scripts/python.exe",
+            "args": ["-m", "pip", "install", "-r", "requirements.txt"],
+            "problemMatcher": []
+        },
+        {
+            "label": "DTMF: testar reconhecimento",
+            "type": "process",
+            "command": "${workspaceFolder}/venv/Scripts/python.exe",
+            "args": ["-m", "unittest", "discover", "-s", "tests", "-v"],
+            "group": "test",
+            "problemMatcher": []
+        }
+    ]
+}
